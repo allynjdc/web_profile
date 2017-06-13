@@ -5,7 +5,7 @@ body {
 
 
 .banner {
-
+	text-align: center;
 }
 
 .banner-img {
@@ -13,14 +13,31 @@ body {
 	height: 600px;
 }
 
+.banner-title {
+	position: absolute;
+	bottom: 0px;
+	width: 500px;
+	left: 435px;
+	top: 250px;
+	bottom: 320px;
+	color: #fff;
+	border: 3px solid #fff;
+	text-align: center;
+	text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.banner-title > h1 {
+	margin: 3%;
+}
+
 .div-pills-div{
 	width: 100%;
 	background-color: #fff;
 	border: 1px solid #DDD;
 	padding-left:39%;
-	padding-right:38%;
+	padding-right:38%;}
 
-.about_me {}
+.about-us {}
 
 .skills {}
 
