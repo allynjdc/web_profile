@@ -1,3 +1,21 @@
+
+
+.profile img{
+	width: 20em;
+	height: 20em;
+	object-fit: cover;
+
+}
+/*
+.about{
+
+	justify-content: space-around;
+}*/
+
+.row{
+	padding: 5em 0 5em 0;
+}
+
 body {
 	/*background-image: url("../medias/image1.jpg");*/
 }
@@ -77,3 +95,4 @@ body {
 .description{
 	display: none;
 }
+
