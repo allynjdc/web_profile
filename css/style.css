@@ -29,12 +29,21 @@ body {
 	margin: 3%;
 }
 
+.banner-title > h4 {
+	margin-top: 20px;
+}
+
 .div-pills-div{
 	width: 100%;
 	background-color: #fff;
 	border: 1px solid #DDD;
-	padding-left:39%;
-	padding-right:38%;}
+	padding-left:29.5%;
+}
+
+.div-pills-div > li > a {
+	color: #000;
+	font-size: 18px;
+}
 
 .about-us {}
 
