@@ -6,23 +6,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-		<!-- <script type="text/javascript" src="../script.js"></script> -->
+	<script src="jquery.js"></script>
+	<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    $('[data-toggle="tooltip"]').tooltip(); 
+		});
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 
 </head>
 <body>
 
-<div>
-	<ul>
-		<li>Home</li>
-		<li>About Us</li>
-		<li>Skills</li>
-		<li>Gallery</li>
-	</ul>
-</div>
-
 <div class="banner">
-	<img src="">
+	<img class="banner-img" src="../medias/image4.jpg">
+	<div class="banner-title">
+		<h1 class=""> TITLE HERE </h1>
+		<h4>INSERT SOMETHING HERE</h4>
+	</div>
+	<ul class="nav nav-pills div-pills-div">
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">ABOUT US</a></li>
+		<li><a href="#">SKILLS</a></li>
+		<li><a href="#">AFFILIATIONS</a></li>
+		<li><a href="#">GALLERY</a></li>
+	</ul>
 </div>
 
 <div class="container">
