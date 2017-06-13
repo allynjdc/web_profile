@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
-	<script src="jquery.js"></script>
+	<script src="../jquery.js"></script>
+	<script src="../script.js"></script>
+
 	<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
 	<script type="text/javascript">
@@ -26,17 +28,19 @@
 		<h1 class=""> TITLE HERE </h1>
 		<h4>INSERT SOMETHING HERE</h4>
 	</div>
-	<ul class="nav nav-pills div-pills-div">
-		<li><a href="#">HOME</a></li>
-		<li><a href="#">ABOUT US</a></li>
-		<li><a href="#">SKILLS</a></li>
-		<li><a href="#">AFFILIATIONS</a></li>
-		<li><a href="#">GALLERY</a></li>
-	</ul>
+	<nav class="navbar navbar-default" role="navigation" id="navbar">
+		<ul class="nav nav-pills div-pills-div">
+			<li><a href="#">HOME</a></li>
+			<li><a href="#profile">ABOUT US</a></li>
+			<li><a href="#">SKILLS</a></li>
+			<li><a href="#">AFFILIATIONS</a></li>
+			<li><a href="#">GALLERY</a></li>
+		</ul>
+	</nav>
 </div>
 
 <div class="container">
-	<div class="profile">
+	<div class="profile" id="profile">
 		<div class="row">
 			<div class="col-sm-3">
 				<img src="../kaneki.jpg" id="allyn-pic">

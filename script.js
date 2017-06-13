@@ -1,26 +1,31 @@
-window.onload = function(){
-	document.getElementById("allyn-pic").onclick = a_showDiv;
-	document.getElementById("lincy-pic").onclick = l_showDiv;
+// var banner = $('.banner-title').offset().top;
 
-	console.log("script");
-}
+// $(window).scroll(function(){
+// 	if ($(window).scrollTop() > navbar) {
+// 		$('.banner').addClass('fixed');
+// 	}
+// 	else{
+// 		$('.banner').removeClass('fixed');
+// 	}
 
-function a_showDiv() {
-	var div = document.getElementById("allyn-div");
-	if (div.style.display === 'none') {
-		div.style.display = 'block';
+// 	console.log("script");
+// });
+
+$(document).ready(function(){
+
+var navbar = $('#navbar');
+var originalOffset = navbar.offset().top;
+
+function scroll() {
+	if ($(window).scrollTop() >= originalOffset) {
+		$('#navbar').addClass('navbar-fixed-top');
 	}
 	else{
-		div.style.display = 'none';
+		$('#navbar').removeClass('navbar-fixed-top');
+
 	}
 }
 
-function l_showDiv() {
-	var div = document.getElementById("lincy-div");
-	if (div.style.display === 'none') {
-		div.style.display = 'block';
-	}
-	else{
-		div.style.display = 'none';
-	}
-}
+	document.onscroll = scroll;
+
+});
