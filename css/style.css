@@ -81,6 +81,13 @@ body {
 	margin: 3px;
 }
 
+.item > .gallery-caro,
+.item > img {
+	
+	width: 460px;
+	height: 345px;
+}
+
 .container > h4 > a {
 	color: #636363;
 	style: none;
