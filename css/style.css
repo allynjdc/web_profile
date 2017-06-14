@@ -38,15 +38,17 @@ body {
 
 .banner-title {
 	position: absolute;
-	bottom: 0px;
 	width: 500px;
-	left: 435px;
-	top: 250px;
-	bottom: 320px;
+	left: 100px;
+	top: 100px;
 	color: #fff;
-	border: 3px solid #fff;
 	text-align: center;
 	text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.banner-title > h1 {
+	padding: 10px;
+	border: 3px solid #fff;
 }
 
 .banner-title > h1 {
@@ -59,9 +61,9 @@ body {
 
 .div-pills-div{
 	width: 100%;
+	margin-top: 0;
 	background-color: #fff;
 	border: 1px solid #DDD;
-	padding-left:29.5%;
 }
 
 .div-pills-div > li > a {
@@ -69,12 +71,26 @@ body {
 	font-size: 18px;
 }
 
+.about-us, .skills, .affiliations, .gallery {
+	padding: 10px;
+}
+
 .about-us {}
 
 .skills {}
 
+.affiliations {
+	width: 100%;
+}
+
+.affi-entry {
+	text-align: center;
+	width: 25%;
+	float: left;
+}
+
 .gallery {
-	padding: 10px;
+	
 }
 
 .gallery > h2 {
@@ -94,14 +110,14 @@ body {
 	height: 100%;
 }*/
 
-.gallery > h4 > a {
-	color: #636363;
-	style: none;
-}
-
 .gal-header {
 	background-color: #fff;
 }
+
+.gal-header > ul > li > a {
+	color: #636363;
+}
+
 
 .gal-tab-content {
 	background-color: #000;
@@ -114,7 +130,7 @@ body {
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-      width: 60%;
+      width: 55%;
       height: 370px;
       margin: auto;
 }
