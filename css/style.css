@@ -7,6 +7,15 @@
 	src: url("../font/Lato2OFL/Lato-Light.ttf");
 }
 @font-face{
+	font-family: qt_font;
+	src: url("../font/HTOWERTI.otf");
+	
+}
+@font-face{
+	font-family: banner_font;
+	src: url("../font/Freight Disp Black.otf");
+}
+@font-face{
 	font-family: link_font;
 	src: url("../font/Montserrat-Light.otf");
 }
@@ -49,7 +58,8 @@ h2{
 
 .name h4{
 	margin-top: 0;
-	color: #DCAE1D;
+	/*color: #DCAE1D;*/
+	color: rgba(249, 205, 74, 0.7);
 }
 
 hr.hr{
@@ -59,10 +69,20 @@ hr.hr{
 
 blockquote{
  	margin: 2.5em 0;
-	border-left: solid 8px blue;
+	border-left: solid 8px #CAE4DB;
 	font-family: quote_font;
 	font-size: 1.5em;
 	letter-spacing: 1px;
+}
+
+strong{
+	font-size: 1.5em;
+}
+
+.date{
+	/*color: rgba(0, 48, 63, 0.6);*/
+	color: #DDD;
+
 }
 
 .name{
@@ -77,6 +97,11 @@ blockquote{
 	text-align: center;
 }
 
+.qt{
+	font-family: qt_font;
+	font-size: 1.5em;
+	color: #CAE4DB; 
+}
 
 .see{
 	font-size: 2em;
@@ -90,6 +115,10 @@ blockquote{
 .see:hover{
 	color: #7A9D96;
 	text-decoration: none;
+}
+
+.projects h5{
+	color: #7A9D96;
 }
 
 .info > *{
@@ -113,6 +142,9 @@ blockquote{
 	text-align: center;
 	margin-bottom: 3em;
 	font-family: three_font;
+	text-decoration: underline;
+	text-decoration-color: rgba(0, 48, 63, 0.6);
+	text-decoration: underline 10px;
 }
 
 .row{
@@ -124,6 +156,15 @@ body {
 	/*background-color: #f2f9f7;*/
 	/*background-image: url("../medias/image1.jpg");*/
 	font-family: original_font;
+	color: #00303F;
+}
+
+
+.affiliations h3{
+	font-family: name_header;
+	font-size: 2.5em;
+	margin-left: 10px;
+	margin-bottom: 30px;
 }
 
 .bold {
@@ -149,19 +190,22 @@ body {
 	top: 250px;
 	left: 30%;
 	right: 30%;
-	color: #00303F;  
-	text-shadow: 0 0 10px rgba(0,0,0,0.5);
+	color: #00303F;
 }
 
 .banner-title > h1 {
+	font-family: banner_font;  
 	padding: 10px;
 	border: 3px solid #fff;
 	margin: 1%;
 	font-weight: bold;
+	word-spacing: 20px;
+	text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .banner-title > h4 {
-	margin-top: 20px;
+	margin-top: 10px;
+	color: #f9cd4a;
 }
 
 .div-pills-div{
