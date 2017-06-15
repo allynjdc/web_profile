@@ -1,3 +1,28 @@
+@font-face{
+	font-family: original_font;
+	src: url("../font/Montserrat-Regular.otf");
+}
+@font-face{
+	font-family: one_font;
+	src: url("../font/Lato2OFL/Lato-Light.ttf");
+}
+@font-face{
+	font-family: link_font;
+	src: url("../font/Montserrat-Light.otf");
+}
+@font-face{
+	font-family: name_header;
+	src: url("../font/Freight Disp Black.otf");
+}
+@font-face{
+	font-family: quote_font;
+	src: url("../font/Freight Disp Book Italic.otf");
+}
+@font-face{
+	font-family: three_font;
+	src: url("../font/Lato2OFL/Lato-Black.ttf");
+}
+
 *, *:before, *:after{
 	box-sizing: border-box;
 }
@@ -9,17 +34,22 @@
 
 }
 
-h1{
+#abt_us{
 	margin-top: 3.5em;
 }
+
+.container h1{
+	font-size: 4em;
+	font-family: one_font;
+} 
 
 h2{
 	margin-top: 0;
 }
 
-h4{
+.name h4{
 	margin-top: 0;
-	color: #8c8b8b; 
+	color: #DCAE1D;
 }
 
 hr.hr{
@@ -28,25 +58,38 @@ hr.hr{
 }
 
 blockquote{
-	margin: 2em 0; 
-	font-style: italic;
-	border-left: solid 5px blue;
-}
-
-.quote{
-	font-size: 20px;
+ 	margin: 2.5em 0;
+	border-left: solid 8px blue;
+	font-family: quote_font;
+	font-size: 1.5em;
+	letter-spacing: 1px;
 }
 
 .name{
 	margin-left: 2em;
 }
+.name h2{
+	font-family: name_header;
+	font-size: 3em;
+	word-spacing: 10px;
+}
 .info{
 	text-align: center;
 }
 
-.info a{
+
+.see{
 	font-size: 2em;
 	cursor: pointer;
+	font-family: link_font;
+	color: #00303F;
+
+}
+
+
+.see:hover{
+	color: #7A9D96;
+	text-decoration: none;
 }
 
 .info > *{
@@ -56,25 +99,20 @@ blockquote{
 .skills{
 	text-align: center;
 }
-/*.skills h3{
-	text-align: center;
-	margin-bottom: 30px;
-}
-.projects h3{
-	text-align: center;
-}*/
+
 .more_info p{
 	font-size: 15px;
 	margin: 10px auto 35px auto;
 }
 
 .more_info{
-	/*display: none;*/
+	display: none;
 }
 
 .more_info h3{
 	text-align: center;
 	margin-bottom: 3em;
+	font-family: three_font;
 }
 
 .row{
@@ -83,6 +121,7 @@ blockquote{
 
 body {
 	/*background-image: url("../medias/image1.jpg");*/
+	font-family: original_font;
 }
 
 
@@ -98,15 +137,17 @@ body {
 
 .banner-title {
 	position: absolute;
-	bottom: 0px;
 	width: 500px;
-	left: 435px;
-	top: 250px;
-	bottom: 320px;
+	left: 100px;
+	top: 100px;
 	color: #fff;
-	border: 3px solid #fff;
 	text-align: center;
 	text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.banner-title > h1 {
+	padding: 10px;
+	border: 3px solid #fff;
 }
 
 .banner-title > h1 {
@@ -119,9 +160,9 @@ body {
 
 .div-pills-div{
 	width: 100%;
+	margin-top: 0;
 	background-color: #fff;
 	border: 1px solid #DDD;
-	padding-left:29.5%;
 }
 
 .div-pills-div > li > a {
@@ -129,15 +170,29 @@ body {
 	font-size: 18px;
 }
 
+.about-us, .skills, .affiliations, .gallery {
+	padding: 10px;
+}
+
 .about-us {}
 
 .skills {}
 
-.gallery {
-	background-color: black;
+.affiliations {
+	width: 100%;
 }
 
-#gallery {
+.affi-entry {
+	text-align: center;
+	width: 25%;
+	float: left;
+}
+
+.gallery {
+	
+}
+
+.gallery > h2 {
 	margin-top: 20px;
 }
 
@@ -147,15 +202,40 @@ body {
 	margin: 3px;
 }
 
-.container > h4 > a {
+/*.item > .gallery-caro,
+.item > img {
+	
+	width: auto;
+	height: 100%;
+}*/
+
+.gal-header {
+	background-color: #fff;
+}
+
+.gal-header > ul > li > a {
 	color: #636363;
-	style: none;
+}
+
+
+.gal-tab-content {
+	background-color: #000;
+	padding: 5px;
+}
+
+.carousel {
+	height: 370px;
 }
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-      width: 70%;
+      width: 55%;
+      height: 370px;
       margin: auto;
+}
+
+.caro-lib {
+	text-align: center;
 }
 
 .description{
