@@ -120,14 +120,20 @@ blockquote{
 }
 
 body {
+
+	/*background-color: #f2f9f7;*/
 	/*background-image: url("../medias/image1.jpg");*/
 	font-family: original_font;
 }
 
-
+.bold {
+	font-weight: bold;
+	color: #00303F;
+}
 
 .banner {
 	text-align: center;
+	align-content: center;
 }
 
 .banner-img {
@@ -136,22 +142,22 @@ body {
 }
 
 .banner-title {
-	position: absolute;
-	width: 500px;
-	left: 100px;
-	top: 100px;
-	color: #fff;
 	text-align: center;
+	width: 40%;
+	margin: auto;
+	position: absolute;
+	top: 250px;
+	left: 30%;
+	right: 30%;
+	color: #00303F;  
 	text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .banner-title > h1 {
 	padding: 10px;
 	border: 3px solid #fff;
-}
-
-.banner-title > h1 {
 	margin: 1%;
+	font-weight: bold;
 }
 
 .banner-title > h4 {
@@ -160,15 +166,19 @@ body {
 
 .div-pills-div{
 	width: 100%;
-	margin-top: 0;
 	background-color: #fff;
 	border: 1px solid #DDD;
 }
 
 .div-pills-div > li > a {
-	color: #000;
 	font-size: 18px;
+	color: #00303F;	
 }
+
+.div-pills-div > li > a:hover {
+	background-color: #DCAE1D;
+}
+	
 
 .about-us, .skills, .affiliations, .gallery {
 	padding: 10px;
@@ -214,12 +224,16 @@ body {
 }
 
 .gal-header > ul > li > a {
-	color: #636363;
+	color: #00303F;
 }
 
+.gal-header > ul > li > a:hover {
+	background-color: #CAE4DB;
+	color: #DCAE1D;
+}
 
 .gal-tab-content {
-	background-color: #000;
+	background-color: #00090c;
 	padding: 5px;
 }
 
