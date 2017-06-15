@@ -1,4 +1,31 @@
+@font-face{
+	font-family: original_font;
+	src: url("../font/Montserrat-Regular.otf");
+}
+@font-face{
+	font-family: one_font;
+	src: url("../font/Lato2OFL/Lato-Light.ttf");
+}
+@font-face{
+	font-family: link_font;
+	src: url("../font/Montserrat-Light.otf");
+}
+@font-face{
+	font-family: name_header;
+	src: url("../font/Freight Disp Black.otf");
+}
+@font-face{
+	font-family: quote_font;
+	src: url("../font/Freight Disp Book Italic.otf");
+}
+@font-face{
+	font-family: three_font;
+	src: url("../font/Lato2OFL/Lato-Black.ttf");
+}
 
+*, *:before, *:after{
+	box-sizing: border-box;
+}
 
 .profile img{
 	width: 20em;
@@ -7,24 +34,96 @@
 
 }
 
-/*#navbar{
-	position: fixed;
-	z-index: 1;
-}*/
-/*
-.about{
+#abt_us{
+	margin-top: 3.5em;
+}
 
-	justify-content: space-around;
-}*/
+.container h1{
+	font-size: 4em;
+	font-family: one_font;
+} 
+
+h2{
+	margin-top: 0;
+}
+
+.name h4{
+	margin-top: 0;
+	color: #DCAE1D;
+}
+
+hr.hr{
+	border-top: solid double #8c8b8b;
+	margin-bottom: 10px;
+}
+
+blockquote{
+ 	margin: 2.5em 0;
+	border-left: solid 8px blue;
+	font-family: quote_font;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+}
+
+.name{
+	margin-left: 2em;
+}
+.name h2{
+	font-family: name_header;
+	font-size: 3em;
+	word-spacing: 10px;
+}
+.info{
+	text-align: center;
+}
+
+
+.see{
+	font-size: 2em;
+	cursor: pointer;
+	font-family: link_font;
+	color: #00303F;
+
+}
+
+
+.see:hover{
+	color: #7A9D96;
+	text-decoration: none;
+}
+
+.info > *{
+	text-align: left;
+	width: 100%;
+}
+.skills{
+	text-align: center;
+}
+
+.more_info p{
+	font-size: 15px;
+	margin: 10px auto 35px auto;
+}
+
+.more_info{
+	display: none;
+}
+
+.more_info h3{
+	text-align: center;
+	margin-bottom: 3em;
+	font-family: three_font;
+}
 
 .row{
-	padding: 5em 0 5em 0;
+	padding: 4em 0;
 }
 
 body {
 
 	/*background-color: #f2f9f7;*/
 	/*background-image: url("../medias/image1.jpg");*/
+	font-family: original_font;
 }
 
 .bold {

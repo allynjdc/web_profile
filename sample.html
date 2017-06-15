@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		.container{
+			display: flex;
+			height: 200px;
+			width: 200px;
+			position: relative;
+		}
+
+		.div{
+			box-sizing: border-box;	
+			height: 100px;
+			width: 100px;
+			background-color: blue;
+			position: absolute;
+			border: solid 10px blue;
+		}
+		.div.one{
+			left: 0;
+			border-radius: 100% 0 0 0;
+		}
+		.div.one-empty{
+			box-sizing: border-box;	
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			border-radius: 100% 0 0 0;
+			transform-origin: right bottom;
+			transform: rotate(45deg);
+			border: solid 10px #DDD;
+			background-color: white;
+		}
+		.div.two{
+			right: 0;
+			border-radius: 0 100% 0 0;
+		}
+		.div.three{
+			right: 0;
+			bottom: 0;
+			border-radius: 0 0 100% 0;
+
+		}
+		.div.four{
+			left: 0;
+			bottom: 0;
+			border-radius: 0 0 0 100%;
+		}
+
+		.inner-circle{
+			border-radius: 50%;
+			position: absolute;
+			height: 180px;
+			width:180px;
+			background-color: gray;
+			top: 10px;
+			left: 10px;
+			z-index: 5;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="div one"></div>
+		<div class="div one-empty"></div>
+		<div class="div two"></div>
+		<div class="div three"></div>
+		<div class="div four"></div>
+		<div class="inner-circle"></div>		
+	</div>
+</body>
+</html>

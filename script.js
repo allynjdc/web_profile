@@ -1,15 +1,37 @@
-// var banner = $('.banner-title').offset().top;
+window.onload = function() {
+	document.getElementById("seymour_allyn").onclick = loadAllyn;
+	document.getElementById("seymour_lincy").onclick = loadLincy;
 
-// $(window).scroll(function(){
-// 	if ($(window).scrollTop() > navbar) {
-// 		$('.banner').addClass('fixed');
-// 	}
-// 	else{
-// 		$('.banner').removeClass('fixed');
-// 	}
+}
 
-// 	console.log("script");
-// });
+function loadAllyn() {
+	var x = document.getElementById("a_more");
+	var link = document.getElementById("seymour_allyn");
+	if (x.style.display === 'none') {
+		x.style.display = 'block';
+		link.innerHTML = 'See Less';
+
+	}
+	else{
+		x.style.display = 'none';
+		link.innerHTML = 'See More';
+		
+	}
+}
+
+function loadLincy() {
+	var x = document.getElementById("l_more");
+	var link = document.getElementById("seymour_lincy");
+	if (x.style.display === 'none') {
+		x.style.display = 'block';
+		link.innerHTML = 'See Less';
+	}
+	else{
+		x.style.display = 'none';
+		link.innerHTML = 'See More';
+
+	}
+}
 
 $(document).ready(function(){
 
