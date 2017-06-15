@@ -1,0 +1,651 @@
+
+/*========================================================*/
+.wrapper{
+	display: flex;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+.outer{
+	display: block;
+	margin: auto;
+}
+.label{
+	text-align: center;
+	width: 100px;
+	height: 20px;
+}
+.label>p{
+	font-size: 12px;
+	color: black;
+	margin: auto;
+}
+.circle{
+	display: flex;
+	height: 100px;
+	width: 100px;
+	position: relative;
+}
+
+.div{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border: solid 5px blue;
+}
+.div.one{
+	left: 0;
+	border-radius: 100% 0 0 0;
+}
+
+.div.two{
+	right: 0;
+	border-radius: 0 100% 0 0;
+}
+.div.three{
+	right: 0;
+	bottom: 0;
+	border-radius: 0 0 100% 0;
+
+}
+.div.four{
+	left: 0;
+	bottom: 0;
+	border-radius: 0 0 0 100%;
+}
+
+.inner-circle{
+	border-radius: 50%;
+	position: absolute;
+	height: 90px;
+	width: 90px;
+	background-color: gray;
+	top: 5px;
+	left: 5px;
+	z-index: 5;
+}
+
+.per-container{
+	position: relative;
+	height: 100px;
+	width: 100px;
+	z-index: 6;
+}
+
+span.percentage{
+
+	position: absolute;
+	left: 30px;
+	top: 35px;
+	font-size: 20px;
+	color: #cccccc;
+	display: block;
+	text-align: center;
+	white-space: nowrap;
+
+}
+/*============
+	70%
+============*/
+
+.python2 .div.one{
+	left: 0;
+	border-radius: 100% 0 0 0;
+	border-color: #DDD;
+}
+
+
+.python2 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 100% 0 0 0;
+	transform-origin: right bottom;
+	transform: rotate(-20deg);
+	border: solid 5px #DDD;
+	background-color: white;
+}
+
+/*============
+	80%
+============*/
+.c2 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 100% 0 0 0;
+	transform-origin: right bottom;
+	transform: rotate(20deg);
+	border: solid 5px #DDD;
+
+}
+
+/*============
+	60%
+============*/
+.cpp2 .div.one{
+	left: 0;
+	border-radius: 100% 0 0 0;
+	border-color: #DDD;
+}
+
+.cpp2 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 0 0 0 100%;
+	bottom: 0;
+	left: 0;
+	transform-origin: right top;
+	transform: rotate(45deg);
+	border: solid 5px #DDD;
+	z-index: 5;
+}
+/*============
+	85%
+============*/
+.java2 .div.empty{
+	box-sizing: border-box;	
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 100% 0 0 0;
+	transform-origin: right bottom;
+	transform: rotate(30deg);
+	border: solid 5px #DDD;
+}
+
+/*============
+	75%
+============*/
+
+.asm2 .div.one{
+	left: 0;
+	border-radius: 100% 0 0 0;
+	border-color: #DDD;
+
+}
+
+.asm2 .div.empty{
+	box-sizing: border-box;	
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 100% 0 0 0;
+	transform-origin: right bottom;
+	transform: rotate(30deg);
+	border: solid 5px #DDD;
+}
+
+/*============
+	85%
+============*/
+
+.php2 .div.empty{
+	box-sizing: border-box;	
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 100% 0 0 0;
+	transform-origin: right bottom;
+	transform: rotate(30deg);
+	border: solid 5px #DDD;
+}
+/*============
+	60%
+============*/
+.perl2 .div.one{
+	left: 0;
+	border-radius: 100% 0 0 0;
+	border-color: #DDD;
+}
+
+.perl2 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 0 0 0 100%;
+	bottom: 0;
+	left: 0;
+	transform-origin: right top;
+	transform: rotate(45deg);
+	border: solid 5px #DDD;
+	z-index: 5;
+}
+/*============
+	60%
+============*/
+.lisp2 .div.one{
+	left: 0;
+	border-radius: 100% 0 0 0;
+	border-color: #DDD;
+}
+
+.lisp2 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 0 0 0 100%;
+	bottom: 0;
+	left: 0;
+	transform-origin: right top;
+	transform: rotate(45deg);
+	border: solid 5px #DDD;
+	z-index: 5;
+}
+/*============
+	50%
+============*/
+.prolog2 .div.one{
+	left: 0;
+	border-radius: 100% 0 0 0;
+	border-color: #DDD;
+}
+.prolog2 .div.four{
+	left: 0;
+	border-radius: 0 0 0 100%;
+	border-color: #DDD;
+}
+.prolog2 .div.empty{
+	opacity: 0;
+}
+
+/*============
+	80%
+============*/
+.html2 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 100% 0 0 0;
+	transform-origin: right bottom;
+	transform: rotate(20deg);
+	border: solid 5px #DDD;
+
+}
+
+/*============
+	75%
+============*/
+
+.css2 .div.one{
+	left: 0;
+	border-radius: 100% 0 0 0;
+	border-color: #DDD;
+
+}
+
+.css2 .div.empty{
+	box-sizing: border-box;	
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 100% 0 0 0;
+	transform-origin: right bottom;
+	transform: rotate(30deg);
+	border: solid 5px #DDD;
+}
+
+/*============
+	70%
+============*/
+
+.btstrp2 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 100% 0 0 0;
+	transform-origin: right bottom;
+	transform: rotate(-20deg);
+	border: solid 5px #DDD;
+	background-color: white;
+}
+
+/*============
+	70%
+============*/
+
+.js2 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 100% 0 0 0;
+	transform-origin: right bottom;
+	transform: rotate(-20deg);
+	border: solid 5px #DDD;
+	background-color: white;
+}
+
+/*============
+	60%
+============*/
+.ajax2 .div.one{
+	left: 0;
+	border-radius: 100% 0 0 0;
+	border-color: #DDD;
+}
+
+.ajax2 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 0 0 0 100%;
+	bottom: 0;
+	left: 0;
+	transform-origin: right top;
+	transform: rotate(45deg);
+	border: solid 5px #DDD;
+	z-index: 5;
+}
+
+/*============
+	80%
+============*/
+.laravel2 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 100% 0 0 0;
+	transform-origin: right bottom;
+	transform: rotate(20deg);
+	border: solid 5px #DDD;
+
+}
+/*========================================================*/
+
+
+/*============
+	60%
+============*/
+.python1 .div.one{
+	left: 0;
+	border-radius: 100% 0 0 0;
+	border-color: #DDD;
+}
+
+.python1 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 0 0 0 100%;
+	bottom: 0;
+	left: 0;
+	transform-origin: right top;
+	transform: rotate(45deg);
+	border: solid 5px #DDD;
+	z-index: 5;
+}
+/*============
+	85%
+============*/
+.c1 .div.empty{
+	box-sizing: border-box;	
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 100% 0 0 0;
+	transform-origin: right bottom;
+	transform: rotate(30deg);
+	border: solid 5px #DDD;
+}
+
+/*============
+	65%
+============*/
+.cpp1 .div.one{
+	left: 0;
+	border-radius: 100% 0 0 0;
+	border-color: #DDD;
+}
+
+.cpp1 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 0 0 0 100%;
+	bottom: 0;
+	left: 0;
+	transform-origin: right top;
+	transform: rotate(53deg);
+	border: solid 5px #DDD;
+	z-index: 5;
+}
+/*============
+	90%
+============*/
+.java1 .div.empty{
+	box-sizing: border-box;	
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 100% 0 0 0;
+	transform-origin: right bottom;
+	transform: rotate(45deg);
+	border: solid 5px #DDD;
+}
+/*============
+	80%
+============*/
+.asm1 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 100% 0 0 0;
+	transform-origin: right bottom;
+	transform: rotate(20deg);
+	border: solid 5px #DDD;
+
+}
+
+/*============
+	80%
+============*/
+.php1 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 100% 0 0 0;
+	transform-origin: right bottom;
+	transform: rotate(20deg);
+	border: solid 5px #DDD;
+}
+
+/*============
+	60%
+============*/
+.perl1 .div.one{
+	left: 0;
+	border-radius: 100% 0 0 0;
+	border-color: #DDD;
+}
+
+.perl1 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 0 0 0 100%;
+	bottom: 0;
+	left: 0;
+	transform-origin: right top;
+	transform: rotate(45deg);
+	border: solid 5px #DDD;
+	z-index: 5;
+}
+/*============
+	60%
+============*/
+.lisp1 .div.one{
+	left: 0;
+	border-radius: 100% 0 0 0;
+	border-color: #DDD;
+}
+
+.lisp1 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 0 0 0 100%;
+	bottom: 0;
+	left: 0;
+	transform-origin: right top;
+	transform: rotate(45deg);
+	border: solid 5px #DDD;
+	z-index: 5;
+}
+/*============
+	55%
+============*/
+.prolog1 .div.one{
+	left: 0;
+	border-radius: 100% 0 0 0;
+	border-color: #DDD;
+}
+
+.prolog1 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 0 0 0 100%;
+	bottom: 0;
+	left: 0;
+	transform-origin: right top;
+	transform: rotate(27deg);
+	border: solid 5px #DDD;
+	z-index: 5;
+}
+/*============
+	85%
+============*/
+.html1 .div.empty{
+	box-sizing: border-box;	
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 100% 0 0 0;
+	transform-origin: right bottom;
+	transform: rotate(30deg);
+	border: solid 5px #DDD;
+}
+
+/*============
+	70%
+============*/
+
+.css1 .div.one{
+	left: 0;
+	border-radius: 100% 0 0 0;
+	border-color: #DDD;
+}
+
+
+.css1 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 100% 0 0 0;
+	transform-origin: right bottom;
+	transform: rotate(-20deg);
+	border: solid 5px #DDD;
+	background-color: white;
+}
+
+/*============
+	70%
+============*/
+
+.btstrp1 .div.one{
+	left: 0;
+	border-radius: 100% 0 0 0;
+	border-color: #DDD;
+}
+
+
+.btstrp1 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 100% 0 0 0;
+	transform-origin: right bottom;
+	transform: rotate(-20deg);
+	border: solid 5px #DDD;
+	background-color: white;
+}
+/*============
+	65%
+============*/
+.js1 .div.one{
+	left: 0;
+	border-radius: 100% 0 0 0;
+	border-color: #DDD;
+}
+
+.js1 .div.empty{
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 0 0 0 100%;
+	bottom: 0;
+	left: 0;
+	transform-origin: right top;
+	transform: rotate(53deg);
+	border: solid 5px #DDD;
+	z-index: 5;
+}
+/*============
+	50%
+============*/
+.ajax1 .div.one{
+	left: 0;
+	border-radius: 100% 0 0 0;
+	border-color: #DDD;
+}
+.ajax1 .div.four{
+	left: 0;
+	border-radius: 0 0 0 100%;
+	border-color: #DDD;
+}
+.ajax1 .div.empty{
+	opacity: 0;
+}
+/*============
+	85%
+============*/
+.laravel1 .div.empty{
+	box-sizing: border-box;	
+	box-sizing: border-box;	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 100% 0 0 0;
+	transform-origin: right bottom;
+	transform: rotate(30deg);
+	border: solid 5px #DDD;
+}

@@ -1,4 +1,6 @@
-
+*, *:before, *:after{
+	box-sizing: border-box;
+}
 
 .profile img{
 	width: 20em;
@@ -7,18 +9,76 @@
 
 }
 
-/*#navbar{
-	position: fixed;
-	z-index: 1;
-}*/
-/*
-.about{
+h1{
+	margin-top: 3.5em;
+}
 
-	justify-content: space-around;
+h2{
+	margin-top: 0;
+}
+
+h4{
+	margin-top: 0;
+	color: #8c8b8b; 
+}
+
+hr.hr{
+	border-top: solid double #8c8b8b;
+	margin-bottom: 10px;
+}
+
+blockquote{
+	margin: 2em 0; 
+	font-style: italic;
+	border-left: solid 5px blue;
+}
+
+.quote{
+	font-size: 20px;
+}
+
+.name{
+	margin-left: 2em;
+}
+.info{
+	text-align: center;
+}
+
+.info a{
+	font-size: 2em;
+	cursor: pointer;
+}
+
+.info > *{
+	text-align: left;
+	width: 100%;
+}
+.skills{
+	text-align: center;
+}
+/*.skills h3{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.projects h3{
+	text-align: center;
 }*/
+.more_info p{
+	font-size: 15px;
+	margin: 10px auto 35px auto;
+}
+
+.more_info{
+	/*display: none;*/
+}
+
+.more_info h3{
+	text-align: center;
+	margin-bottom: 3em;
+}
 
 .row{
-	padding: 5em 0 5em 0;
+	padding: 4em 0;
 }
 
 body {
