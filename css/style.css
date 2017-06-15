@@ -227,17 +227,18 @@ body {
 }
 
 .div-pills-div > li > a:hover {
-	background-color: #DCAE1D;
+	/*background-color: #DCAE1D;*/
+	background-color: rgba(249, 205, 74, 0.7)
+}
+
+#gallery h1{
+	margin-bottom: 40px;
 }
 	
 
 .about-us, .skills, .affiliations, .gallery {
 	padding: 10px;
 }
-
-.about-us {}
-
-.skills {}
 
 .affiliations {
 	width: 100%;
@@ -263,13 +264,6 @@ body {
 	margin: 3px;
 }
 
-/*.item > .gallery-caro,
-.item > img {
-	
-	width: auto;
-	height: 100%;
-}*/
-
 .gal-header {
 	background-color: #fff;
 }
@@ -279,14 +273,17 @@ body {
 }
 
 .gal-header > ul > li > a:hover {
-	background-color: #CAE4DB;
-	color: #DCAE1D;
+	/*background-color: #CAE4DB;
+	color: #DCAE1D;*/
+	background-color: rgba(249, 205, 74, 0.7)
 }
 
 .gal-tab-content {
 	background-color: #00090c;
 	padding: 5px;
 }
+
+
 
 .carousel {
 	height: 370px;
@@ -307,3 +304,8 @@ body {
 	display: none;
 }
 
+#pill .active a{
+	background-color: #CAE4DB;
+	
+
+}
