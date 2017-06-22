@@ -174,6 +174,19 @@ body {
 	color: rgba(0, 48, 63, 0.6);
 }
 
+/*
+.educ_back h3{
+	font-size: 1.5em;
+}*/
+
+.educ_back h4{
+	margin-top: 1em;
+}
+
+.educ_back p{
+	color: rgba(0, 48, 63, 0.6);
+}
+
 .bold {
 	font-weight: bold;
 	color: #00303F;
@@ -238,6 +251,12 @@ body {
 
 .about-us, .skills, .affiliations, .gallery {
 	padding: 10px;
+}
+
+.school {
+	text-align: center;
+	width: 50%;
+	float: left;
 }
 
 .affiliations {
